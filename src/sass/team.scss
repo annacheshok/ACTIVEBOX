@@ -19,11 +19,11 @@
 }
 .team-item__image{
     max-height:270px;
-}
-.team-item__image img{
+    & img{
     object-fit: cover;
     width:100%;
     height:100%;
+    }
 }
 .team-item__title{
     padding:31px 0 6px;
@@ -58,12 +58,12 @@
     border: 1px solid #C6CBCD;
     height:39px;
     width:39px;
-}
-.icons-item:not(:last-child){
+    &:not(:last-child){
     margin:0 6px 0 0; 
-}
-.icons-item a {
+    }
+    & a{
     font-size: 18px;
+    }
 }
 @media(max-width:1024px){
 .team{
@@ -93,16 +93,16 @@
 .icons-item{
     height:33px;
     width:33px;
-}
-.icons-item:not(:last-child){
+    &:not(:last-child){
     margin:0 5px 0 0; 
-}
-.icons-item a {
+    }
+    & a{
     font-size: 15px;
+    }
 }
 }
 @media(max-width:768px){
-    .team{
+.team{
     padding:35px 10px 0;
 }
 .team__content{
@@ -122,11 +122,11 @@
 .icons-item{
     height:40px;
     width:40px;
-}
-.icons-item:not(:last-child){
+    &::not(:last-child){
     margin:0 6px 0 0; 
-}
-.icons-item a {
+    }
+    & a{
     font-size: 18px;
+    }
 }
 }

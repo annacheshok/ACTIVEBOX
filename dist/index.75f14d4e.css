@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap";
 .features {
   max-width: 1200px;
   margin: 0 auto;
@@ -333,7 +333,7 @@
     width: 40px;
   }
 
-  .icons-item:not(:last-child) {
+  .icons-item::not(:last-child) {
     margin: 0 6px 0 0;
   }
 
