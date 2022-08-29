@@ -4,8 +4,16 @@
     margin:0 auto;
 }
 .download__title{
+padding:0 0 32px 0;
 font-weight: 500;
 font-size: 30px;
 line-height: 35px;
+color: #000000;
+}
+.download__subtitle{
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+text-transform: uppercase;
 color: #000000;
 }
