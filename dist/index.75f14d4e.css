@@ -7,7 +7,6 @@
 }
 
 .work-block {
-  border: 1px solid red;
   position: relative;
 }
 
@@ -22,6 +21,7 @@
   height: 100%;
   z-index: 2;
   opacity: 0;
+  border: 1px solid #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
