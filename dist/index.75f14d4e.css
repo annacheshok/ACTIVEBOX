@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap";
 .work {
   width: 100vw;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
@@ -93,21 +93,21 @@
   display: flex;
 }
 
-.content-item {
+.features-item {
   max-width: 370px;
   flex-direction: column;
   flex: 0 calc(33.3333% - 20px);
   align-items: center;
-  margin: 0 0 89px;
+  margin: 0 7px 89px;
   display: flex;
 }
 
-.content-item__image {
+.features-item__image {
   height: 100px;
   width: 100px;
 }
 
-.content-item__title {
+.features-item__title {
   text-transform: uppercase;
   color: #2d3033;
   padding: 51px 0 42px;
@@ -116,7 +116,7 @@
   line-height: 28px;
 }
 
-.content-item__text {
+.features-item__text {
   text-align: center;
   color: #6c7279;
   font-size: 18px;
@@ -130,23 +130,24 @@
     padding: 78px 15px 31px;
   }
 
-  .content-item {
+  .features-item {
+    max-width: 315px;
     flex: 0 calc(33.3333% - 13.3333px);
     margin: 0 0 49px;
   }
 
-  .content-item__image {
+  .features-item__image {
     height: 85px;
     width: 85px;
   }
 
-  .content-item__title {
+  .features-item__title {
     padding: 43px 0 24px;
     font-size: 18px;
     line-height: 21px;
   }
 
-  .content-item__text {
+  .features-item__text {
     font-size: 14px;
     line-height: 16px;
   }
@@ -157,22 +158,177 @@
     padding: 40px 20px 35px;
   }
 
-  .content-item {
+  .features-item {
     flex: 0 100%;
     margin: 0 auto 42px;
   }
 
-  .content-item:last-child {
+  .features-item:last-child {
     margin: 0 auto;
   }
 
-  .content-item__image {
+  .features-item__image {
     height: 76px;
     width: 76px;
   }
 
-  .content-item__title {
+  .features-item__title {
     padding: 37px 0 8px;
+  }
+}
+
+.team {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 115px 15px 114px;
+}
+
+.team__content {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
+}
+
+.team-item {
+  max-width: 270px;
+  flex-flow: column wrap;
+  flex: 0 calc(25% - 22.5px);
+  margin: 0 7px;
+  display: flex;
+}
+
+.team-item__image {
+  max-height: 270px;
+}
+
+.team-item__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.team-item__title {
+  text-transform: capitalize;
+  color: #2d3033;
+  padding: 31px 0 6px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.team-item__subtitle {
+  text-transform: uppercase;
+  color: #ff4343;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.team-item__text {
+  color: #6c7279;
+  flex: auto;
+  padding: 18px 0 38px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.team-item__icons {
+  display: flex;
+}
+
+.icons-item {
+  height: 39px;
+  width: 39px;
+  border: 1px solid #c6cbcd;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.icons-item:not(:last-child) {
+  margin: 0 6px 0 0;
+}
+
+.icons-item a {
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .team {
+    max-width: 1014px;
+    padding: 78px 15px;
+  }
+
+  .team-item {
+    flex: 0 calc(25% - 18.75px);
+  }
+
+  .team-item__title {
+    padding: 27px 0 7px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .team-item__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .team-item__text {
+    padding: 22px 0 39px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .icons-item {
+    height: 33px;
+    width: 33px;
+  }
+
+  .icons-item:not(:last-child) {
+    margin: 0 5px 0 0;
+  }
+
+  .icons-item a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    padding: 35px 20px 34px;
+  }
+
+  .team-item {
+    flex: 0 100%;
+    margin: 0 auto 49px;
+  }
+
+  .team-item:last-child {
+    margin: 0 auto;
+  }
+
+  .team-item__image {
+    max-height: 227px;
+  }
+
+  .team-item__text {
+    padding: 39px 0 55px;
+  }
+
+  .icons-item {
+    height: 40px;
+    width: 40px;
+  }
+
+  .icons-item:not(:last-child) {
+    margin: 0 6px 0 0;
+  }
+
+  .icons-item a {
+    font-size: 18px;
   }
 }
 

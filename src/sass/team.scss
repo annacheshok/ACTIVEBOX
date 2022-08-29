@@ -1,0 +1,128 @@
+.team{
+    max-width: 1200px;
+    padding:115px 15px 114px;
+    margin:0 auto;
+}
+.team__content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.team-item{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex:0 1 calc((100% - 90px) / 4);
+    max-width: 270px;
+    margin:0 7px;
+}
+.team-item__image{
+    max-height:270px;
+}
+.team-item__image img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.team-item__title{
+    padding:31px 0 6px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #2D3033;
+}
+.team-item__subtitle{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FF4343;
+}
+.team-item__text{
+    padding:18px 0 38px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6C7279;
+    flex:1 1 auto;
+}
+.team-item__icons{
+    display:flex;
+}
+.icons-item{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C6CBCD;
+    height:39px;
+    width:39px;
+}
+.icons-item:not(:last-child){
+    margin:0 6px 0 0; 
+}
+.icons-item a {
+    font-size: 18px;
+}
+@media(max-width:1024px){
+.team{
+    max-width: 1014px;
+    padding:78px 15px;
+}
+.team-item{
+    flex:0 1 calc((100% - 75px) / 4);
+}
+.team-item__title{
+    padding:27px 0 7px;
+    font-size: 18px;
+    line-height: 21px;
+}
+.team-item__subtitle{
+    font-size: 14px;
+    line-height: 16px;
+}
+.team-item__text{
+    padding: 22px 0 39px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.icons-item{
+    height:33px;
+    width:33px;
+}
+.icons-item:not(:last-child){
+    margin:0 5px 0 0; 
+}
+.icons-item a {
+    font-size: 15px;
+}
+}
+@media(max-width:768px){
+    .team{
+    padding:35px 20px 34px;
+}
+.team-item{
+    flex:0 1 100%;
+    margin:0 auto 49px;
+}
+.team-item:last-child{
+    margin:0 auto;
+}
+.team-item__image{
+    max-height:227px;
+}
+.team-item__text{
+    padding: 39px 0 55px;
+}
+.icons-item{
+    height:40px;
+    width:40px;
+}
+.icons-item:not(:last-child){
+    margin:0 6px 0 0; 
+}
+.icons-item a {
+    font-size: 18px;
+}
+}
