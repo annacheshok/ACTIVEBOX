@@ -1,0 +1,24 @@
+{
+  "name": "activebox",
+  "version": "1.0.0",
+  "description": "text description",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open -p 4000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheshochek/ACTIVEBOX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheshochek/ACTIVEBOX/issues"
+  },
+  "homepage": "https://github.com/cheshochek/ACTIVEBOX#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "sass": "^1.54.5"
+  }
+}

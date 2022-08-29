@@ -1,0 +1,122 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap";
+.work {
+  width: 100vw;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  gap: 0;
+  display: grid;
+}
+
+.work-block {
+  border: 1px solid red;
+  position: relative;
+}
+
+.work-block__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-block__content {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.work-block__content:hover {
+  opacity: 1;
+  background: #ff4343cc;
+}
+
+.work-block__content:active {
+  opacity: 1;
+  background: #b90c0ccc;
+}
+
+.work-block__content-title {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 37px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+}
+
+.work-block__content-subtitle {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@media (max-width: 1024px) {
+  .work-block__content-title {
+    margin: 0 0 23px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .work-block__content-subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work {
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  }
+
+  .work-block__content-title {
+    margin: 0 0 7px;
+  }
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  font-family: Raleway, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=index.75f14d4e.css.map */
