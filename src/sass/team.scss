@@ -14,8 +14,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     flex:0 1 calc((100% - 90px) / 4);
-    max-width: 270px;
-    margin:0 7px;
+    max-width: 280px;
 }
 .team-item__image{
     max-height:270px;
@@ -70,6 +69,9 @@
     max-width: 1014px;
     padding:78px 15px;
 }
+.team__content{
+    align-items: left;
+}
 .team-item{
     flex:0 1 calc((100% - 75px) / 4);
 }
@@ -100,14 +102,15 @@
 }
 @media(max-width:768px){
     .team{
-    padding:35px 20px 34px;
+    padding:35px 20px 0;
+}
+.team__content{
+    margin-bottom: -15px;
+    align-items: stretch;
 }
 .team-item{
     flex:0 1 100%;
     margin:0 auto 49px;
-}
-.team-item:last-child{
-    margin:0 auto;
 }
 .team-item__image{
     max-height:227px;
