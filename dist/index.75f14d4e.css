@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap";
-.features {
+.features__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 116px 15px 45px;
@@ -11,7 +11,7 @@
   display: flex;
 }
 
-.features-item {
+.features__content-item {
   max-width: 400px;
   flex-direction: column;
   flex: 0 33.3333%;
@@ -44,19 +44,19 @@
 }
 
 @media (max-width: 1024px) {
-  .features {
+  .features__container {
     max-width: 1017px;
-    padding: 78px 12px 31px;
+    padding: 78px 10px 31px;
   }
 
   .features__content {
-    margin: 0 -12px;
+    margin: 0 -10px;
   }
 
-  .features-item {
-    max-width: 330px;
+  .features__content-item {
+    max-width: 335px;
     margin: 0 0 49px;
-    padding: 0 12px;
+    padding: 0 10px;
   }
 
   .features-item__image {
@@ -77,7 +77,7 @@
 }
 
 @media (max-width: 768px) {
-  .features {
+  .features__container {
     padding: 40px 20px 35px;
   }
 
@@ -85,7 +85,7 @@
     margin: 0 -20px;
   }
 
-  .features-item {
+  .features__content-item {
     flex: 0 100%;
     margin: 0 auto 42px;
     padding: 0 20px;
@@ -105,7 +105,7 @@
   }
 }
 
-.work {
+.work__container {
   width: 100vw;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
   gap: 0;
@@ -178,7 +178,7 @@
 }
 
 @media (max-width: 768px) {
-  .work {
+  .work__container {
     grid-template: repeat(4, 1fr) / repeat(2, 1fr);
   }
 
@@ -187,7 +187,7 @@
   }
 }
 
-.team {
+.team__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 115px 15px 114px;
@@ -200,7 +200,7 @@
   display: flex;
 }
 
-.team-item {
+.team__content-item {
   max-width: 300px;
   flex-direction: column;
   flex: 0 25%;
@@ -248,7 +248,7 @@
   display: flex;
 }
 
-.icons-item {
+.icon {
   height: 39px;
   width: 39px;
   border: 1px solid #c6cbcd;
@@ -257,26 +257,26 @@
   display: inline-flex;
 }
 
-.icons-item:not(:last-child) {
-  margin: 0 6px 0 0;
-}
-
-.icons-item a {
+.icon a {
   font-size: 18px;
 }
 
+.team__icon:not(:last-child) {
+  margin: 0 6px 0 0;
+}
+
 @media (max-width: 1024px) {
-  .team {
+  .team__container {
     max-width: 1009px;
-    padding: 78px 12px;
+    padding: 78px 12px 0 13px;
   }
 
   .team__content {
-    margin: 0 -12px;
+    margin: 0 -12px 0 -13px;
   }
 
-  .team-item {
-    padding: 0 12px;
+  .team__content-item {
+    padding: 0 12px 0 13px;
   }
 
   .team-item__title {
@@ -301,17 +301,17 @@
     width: 33px;
   }
 
-  .icons-item:not(:last-child) {
-    margin: 0 5px 0 0;
-  }
-
   .icons-item a {
     font-size: 15px;
+  }
+
+  .team__icon:not(:last-child) {
+    margin: 0 5px 0 0;
   }
 }
 
 @media (max-width: 768px) {
-  .team {
+  .team__container {
     padding: 35px 10px 0;
   }
 
@@ -319,7 +319,7 @@
     margin: 0 -10px -15px;
   }
 
-  .team-item {
+  .team__content-item {
     flex: 0 100%;
     margin: 0 auto 49px;
     padding: 0 10px;
@@ -338,24 +338,27 @@
     width: 40px;
   }
 
-  .icons-item:not(:last-child) {
-    margin: 0 6px 0 0;
-  }
-
   .icons-item a {
     font-size: 18px;
   }
+
+  .team__icon:not(:last-child) {
+    margin: 0 6px 0 0;
+  }
 }
 
-.download {
+.download__container {
   max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   padding: 131px 15px 114px;
+  display: flex;
 }
 
 .download__title {
   color: #000;
-  padding: 0 0 32px;
+  padding: 0 0 23px;
   font-size: 30px;
   font-weight: 500;
   line-height: 35px;
@@ -367,6 +370,73 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
+}
+
+.button {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff4343;
+  padding: 24px 67px 26px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+}
+
+.download__button {
+  margin: 51px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .download__container {
+    padding: 94px 15px 78px;
+  }
+
+  .download__title {
+    padding: 0 0 21px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .download__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .button {
+    padding: 28px 68px 29px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .download__button {
+    margin: 45px 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .download__container {
+    text-align: center;
+    padding: 54px 15px 45px;
+  }
+
+  .download__title {
+    padding: 0 37px 22px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .download__subtitle {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .button {
+    padding: 28px 51px 29px 50px;
+  }
+
+  .download__button {
+    margin: 13px 0 0;
+  }
 }
 
 *, :before, :after {

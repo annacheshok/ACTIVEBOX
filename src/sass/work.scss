@@ -1,4 +1,4 @@
-.work {
+.work__container {
     width: 100vw;
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(4, 1fr);
@@ -62,7 +62,7 @@
     }
 }
 @media (max-width:768px) {
-    .work {
+    .work__container {
         grid-template: repeat(4, 1fr)/repeat(2, 1fr);
     }
     .work-block__content-title {

@@ -1,4 +1,4 @@
-.team{
+.team__container{
     max-width: 1200px;
     padding:115px 15px 114px;
     margin:0 auto;
@@ -9,7 +9,7 @@
     align-items: stretch;
     margin: 0 -15px;
 }
-.team-item{
+.team__content-item{
     display:flex;
     flex-direction: column;
     flex:0 1 calc(100%/ 4);
@@ -50,30 +50,30 @@
 .team-item__icons{
     display:flex;
 }
-.icons-item{
+.icon{
     display:inline-flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #C6CBCD;
     height:39px;
     width:39px;
-    &:not(:last-child){
-    margin:0 6px 0 0; 
-    }
     & a{
     font-size: 18px;
     }
 }
+.team__icon:not(:last-child){
+margin:0 6px 0 0;
+}
 @media(max-width:1024px){
-.team{
+.team__container{
     max-width: 1009px;
-    padding:78px 12px;
+    padding:78px 12px 0 13px;
 }
 .team__content{
-    margin:0 -12px;
+    margin:0 -12px 0 -13px;
 }
-.team-item{
-    padding:0 12px;
+.team__content-item{
+    padding:0 12px 0 13px;
 }
 .team-item__title{
     padding:27px 0 7px;
@@ -92,22 +92,22 @@
 .icons-item{
     height:33px;
     width:33px;
-    &:not(:last-child){
-    margin:0 5px 0 0; 
-    }
     & a{
     font-size: 15px;
     }
 }
+.team__icon:not(:last-child){
+margin:0 5px 0 0;
+}
 }
 @media(max-width:768px){
-.team{
+.team__container{
     padding:35px 10px 0;
 }
 .team__content{
     margin:0 -10px -15px;
 }
-.team-item{
+.team__content-item{
     flex:0 1 100%;
     margin:0 auto 49px;
     padding:0 10px;
@@ -121,11 +121,11 @@
 .icons-item{
     height:40px;
     width:40px;
-    &:not(:last-child){
-    margin:0 6px 0 0; 
-    }
     & a{
     font-size: 18px;
     }
+}
+.team__icon:not(:last-child){
+margin:0 6px 0 0;
 }
 }

@@ -1,10 +1,13 @@
-.download{
+.download__container{
     max-width: 1200px;
     padding:131px 15px 114px;
     margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .download__title{
-padding:0 0 32px 0;
+padding:0 0 23px 0;
 font-weight: 500;
 font-size: 30px;
 line-height: 35px;
@@ -17,3 +20,59 @@ line-height: 21px;
 text-transform: uppercase;
 color: #000000;
 }
+.button{
+background-color: #FF4343;
+font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+color: #FFFFFF;
+padding:24px 67px 26px;
+}
+.download__button{
+margin:51px 0 0 0;
+}
+@media(max-width:1024px){
+    .download__container{
+    padding:94px 15px 78px;
+}
+.download__title{
+padding:0 0 21px 0;
+font-size: 24px;
+line-height: 28px;
+}
+.download__subtitle{
+font-size: 14px;
+line-height: 16px;
+}
+.button{
+font-size: 18px;
+line-height: 21px;
+padding:28px 68px 29px;
+}
+.download__button{
+margin:45px 0 0 0;
+}
+}
+@media(max-width:768px){
+.download__container{
+padding:54px 15px 45px;
+text-align: center;
+}
+.download__title{
+padding:0 37px 22px;
+font-size: 18px;
+line-height: 21px;
+}
+.download__subtitle{
+font-size: 13px;
+line-height: 15px;
+}
+.button{
+padding:28px 51px 29px 50px;
+}
+.download__button{
+margin:13px 0 0 0;
+}
+}
+
