@@ -1,9 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;700;900&display=swap");
+
 @import url("features.scss");
+
 @import url("work.scss");
+
 @import url("team.scss");
+
 @import url("download.scss");
+
 @import url("footer.scss");
+
+@import url("testimonials.scss");
+
 *,
 *::before,
 *::after {
@@ -12,17 +20,21 @@
     padding: 0;
     border: 0;
 }
+
 a {
     text-decoration: none;
 }
+
 ul,
 ol,
 li {
     list-style: none;
 }
+
 img {
     vertical-align: top;
 }
+
 h1,
 h2,
 h3,
@@ -32,13 +44,16 @@ h6 {
     font-weight: inherit;
     font-size: inherit;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
     height: 100%;
 }
+
 .wrapper {
     min-height: 100%;
     overflow: hidden;

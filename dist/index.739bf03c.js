@@ -532,6 +532,10 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"ebWYT":[function(require,module,exports) {
+var _scriptJs = require("./script.js");
+
+},{"./script.js":"dV6cC"}],"dV6cC":[function(require,module,exports) {
+new Swiper(".slide");
 
 },{}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequire2c60")
 

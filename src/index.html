@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/style.scss">
     <link rel="stylesheet" href="./fonts/iconstyle.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>ACTIVEBOX</title>
 </head>
 
@@ -252,54 +253,109 @@
                 </div>
             </div>
         </section>
-        <section class="download">
-            <div class="download__container">
-                <div class="download__title">Are You Ready to Start? Download Now For Free!</div>
-                <div class="download__subtitle">Fusce dapibus, tellus ac cursus commodo</div>
-                <button class="button download__button">download here</button>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="swiper-slide__image">
+                            <img src="./img/bg.png" alt="">
+                        </div>
+                        <div class="swiper-slide__content">
+                            <div class="swiper-slide__content-body">
+                                <div class="swiper-slide__content-comment">
+                                    “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio
+                                    dui.
+                                    Aenean eu leo quam...”
+                                </div>
+                                <div class="swiper-slide__content-author">
+                                    Susan Sims, Interaction Designer at XYZ
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide">
+                        <div class="swiper-slide__image">
+                            <img src="./img/bg.png" alt="">
+                        </div>
+                        <div class="swiper-slide__content">
+                            <div class="swiper-slide__content-body">
+                                <div class="swiper-slide__content-comment">
+                                    “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio
+                                    dui.
+                                    Aenean eu leo quam...”
+                                </div>
+                                <div class="swiper-slide__content-author">
+                                    Susan Sims, Interaction Designer at XYZ
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <footer class="footer">
-                <div class="footer__container">
-                    <div class="footer__columns">
-                        <div class="footer__columns-item">
-                            <div class="footer-item__title">Location</div>
-                            <div class="footer-item__text">
-                                3481 Melrose Place
-                                Beverly Hills, CA 90210
-                            </div>
-                        </div>
-                        <div class="footer__columns-item">
-                            <div class="footer-item__title">Share with Love</div>
-                            <ul class="footer-item__icons">
-                                <li class="icon footer__icon">
-                                    <a class="icon-facebook" href="https://www.facebook.com/"></a>
-                                </li>
-                                <li class="icon footer__icon">
-                                    <a class="icon-twitter" href="https://www.twitter.com/"></a>
-                                </li>
-                                <li class="icon footer__icon">
-                                    <a class="icon-linkedin" href="https://www.linkedin.com/"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__columns-item">
-                            <div class="footer-item__title">About ActiveBox</div>
-                            <div class="footer-item__text">
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non
-                                metus auctor fringilla.
-                            </div>
-                        </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <section class="download">
+        <div class="download__container">
+            <div class="download__title">Are You Ready to Start? Download Now For Free!</div>
+            <div class="download__subtitle">Fusce dapibus, tellus ac cursus commodo</div>
+            <button class="button download__button">download here</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__columns">
+                <div class="footer__columns-item">
+                    <div class="footer-item__title">Location</div>
+                    <div class="footer-item__text">
+                        3481 Melrose Place
+                        Beverly Hills, CA 90210
                     </div>
                 </div>
-                <div class="footer__copyright">
-                    <div class="footer__copyright-content">
-                        Copyright &#169; 2015 ActiveBox. All Rights Reserved
-                        Made with <span>by Kamal Chaneman</span>
+                <div class="footer__columns-item">
+                    <div class="footer-item__title">Share with Love</div>
+                    <ul class="footer-item__icons">
+                        <li class="icon footer__icon">
+                            <a class="icon-facebook" href="https://www.facebook.com/"></a>
+                        </li>
+                        <li class="icon footer__icon">
+                            <a class="icon-twitter" href="https://www.twitter.com/"></a>
+                        </li>
+                        <li class="icon footer__icon">
+                            <a class="icon-linkedin" href="https://www.linkedin.com/"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__columns-item">
+                    <div class="footer-item__title">About ActiveBox</div>
+                    <div class="footer-item__text">
+                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non
+                        metus auctor fringilla.
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="footer__copyright-content">
+                Copyright &#169; 2015 ActiveBox. All Rights Reserved
+                Made with <span>by Kamal Chaneman</span>
+            </div>
+        </div>
     </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js" type="module"></script>
 </body>
 

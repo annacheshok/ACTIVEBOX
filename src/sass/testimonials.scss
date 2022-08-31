@@ -1,0 +1,42 @@
+.slide{
+    display: flex;
+    min-width: 0;
+}
+.swiper-slide__image {
+    flex: 0 1 50%;
+    max-height:490px;
+    & img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.swiper-slide__content {
+    background-color: #5C3249;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 50%;
+}
+.swiper-slide__content-body{
+    max-width:471px;
+}
+.swiper-slide__content-comment {
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.swiper-slide__content-author {
+    padding: 23px 0 0;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
