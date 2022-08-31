@@ -28,6 +28,13 @@ line-height: 28px;
 text-transform: uppercase;
 color: #FFFFFF;
 padding:24px 67px 26px;
+transition: all 0.3s ease 0s;
+&:active{
+box-shadow: 4px 4px 30px #FF4343;
+}
+&:hover{
+background-color: #E71414;
+}
 }
 .download__button{
 margin:51px 0 0 0;

@@ -379,6 +379,15 @@
   font-size: 24px;
   font-weight: 900;
   line-height: 28px;
+  transition: all .3s;
+}
+
+.button:active {
+  box-shadow: 4px 4px 30px #ff4343;
+}
+
+.button:hover {
+  background-color: #e71414;
 }
 
 .download__button {
