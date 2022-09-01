@@ -253,6 +253,7 @@
   border: 1px solid #c6cbcd;
   justify-content: center;
   align-items: center;
+  transition: all .3s;
   display: inline-flex;
 }
 
@@ -260,8 +261,32 @@
   font-size: 18px;
 }
 
+.icon.is-hover--facebook {
+  border: 1px solid #4267b2;
+}
+
+.icon.is-hover--twitter {
+  border: 1px solid #1da1f2;
+}
+
+.icon.is-hover--linkedin {
+  border: 1px solid #007b21;
+}
+
 .team__icon:not(:last-child) {
   margin: 0 6px 0 0;
+}
+
+.icon-facebook:hover:before {
+  color: #4267b2;
+}
+
+.icon-twitter:hover:before {
+  color: #1da1f2;
+}
+
+.icon-linkedin:hover:before {
+  color: #007b21;
 }
 
 @media (max-width: 1024px) {

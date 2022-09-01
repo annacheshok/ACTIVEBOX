@@ -3,12 +3,14 @@
     padding: 115px 15px 114px;
     margin: 0 auto;
 }
+
 .team__content {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     margin: 0 -15px;
 }
+
 .team__content-item {
     display: flex;
     flex-direction: column;
@@ -16,14 +18,17 @@
     max-width: 300px;
     padding: 0 15px;
 }
+
 .team-item__image {
     max-height: 270px;
+
     & img {
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
 }
+
 .team-item__title {
     padding: 31px 0 6px;
     font-weight: 700;
@@ -32,6 +37,7 @@
     text-transform: capitalize;
     color: #2D3033;
 }
+
 .team-item__subtitle {
     font-weight: 400;
     font-size: 18px;
@@ -39,6 +45,7 @@
     text-transform: uppercase;
     color: #FF4343;
 }
+
 .team-item__text {
     padding: 18px 0 38px;
     font-weight: 400;
@@ -47,9 +54,11 @@
     color: #6C7279;
     flex: 1 1 auto;
 }
+
 .team-item__icons {
     display: flex;
 }
+
 .icon {
     display: inline-flex;
     align-items: center;
@@ -57,74 +66,117 @@
     border: 1px solid #C6CBCD;
     height: 39px;
     width: 39px;
+    transition: all 0.3s ease 0s;
+
     & a {
         font-size: 18px;
+    }
+
+    &.is-hover--facebook {
+        border: 1px solid #4267b2;
+    }
+
+    &.is-hover--twitter {
+        border: 1px solid #1da1f2;
+    }
+
+    &.is-hover--linkedin {
+        border: 1px solid #007b21;
     }
 }
 .team__icon:not(:last-child) {
     margin: 0 6px 0 0;
 }
+
+.icon-facebook:hover::before {
+    color: #4267b2;
+}
+
+.icon-twitter:hover::before {
+    color: #1da1f2;
+}
+
+.icon-linkedin:hover::before {
+    color: #007b21;
+}
+
 @media (max-width: 1024px) {
     .team__container {
         max-width: 1009px;
         padding: 78px 12px 0 13px;
     }
+
     .team__content {
         margin: 0 -12px 0 -13px;
     }
+
     .team__content-item {
         padding: 0 12px 0 13px;
     }
+
     .team-item__title {
         padding: 27px 0 7px;
         font-size: 18px;
         line-height: 21px;
     }
+
     .team-item__subtitle {
         font-size: 14px;
         line-height: 16px;
     }
+
     .team-item__text {
         padding: 22px 0 39px;
         font-size: 14px;
         line-height: 16px;
     }
+
     .icon {
         height: 33px;
         width: 33px;
+
         & a {
             font-size: 15px;
         }
     }
+
     .team__icon:not(:last-child) {
         margin: 0 5px 0 0;
     }
 }
+
 @media (max-width: 768px) {
     .team__container {
         padding: 35px 10px 0;
     }
+
     .team__content {
         margin: 0 -10px -15px;
     }
+
     .team__content-item {
         flex: 0 1 100%;
         margin: 0 auto 49px;
         padding: 0 10px;
     }
+
     .team-item__image {
         max-height: 227px;
     }
+
     .team-item__text {
         padding: 39px 0 55px;
     }
+
     .icon {
         height: 40px;
         width: 40px;
+
         & a {
             font-size: 18px;
         }
     }
+
     .team__icon:not(:last-child) {
         margin: 0 6px 0 0;
     }
