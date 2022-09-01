@@ -1,0 +1,46 @@
+.banner {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    &:after {
+        content: '';
+        position: absolute;
+        height:100%;
+        top:0;
+        left:0;
+        background: #252B49;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        z-index: 0;
+    }
+}
+
+.banner__container {
+    position: relative;
+    z-index: 3;
+    max-width: 1170px;
+    padding: 230px 15px 120px;
+    margin: 0 auto;
+}
+
+.banner__title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 0 31px;
+}
+
+.banner__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.banner__button {
+    margin: 80px 0 0;
+}
