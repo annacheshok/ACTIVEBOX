@@ -535,7 +535,12 @@ function hmrAcceptRun(bundle, id) {
 var _scriptJs = require("./script.js");
 
 },{"./script.js":"dV6cC"}],"dV6cC":[function(require,module,exports) {
-new Swiper(".slide");
+$(document).ready(function() {
+    $(".header__burger").click(function(event) {
+        $(".header__burger,.menu__list").toggleClass("active");
+        $("body").toggleClass("lock");
+    });
+});
 
 },{}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequire2c60")
 
