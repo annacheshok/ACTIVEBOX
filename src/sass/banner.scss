@@ -20,6 +20,9 @@
         z-index: 0;
     }
 }
+.button:hover{
+    cursor:pointer;
+}
 
 .banner__container {
     position: relative;
@@ -51,8 +54,7 @@
 
 @media (max-width: 1024px) {
     .banner__container {
-        max-width: 1014px;
-        padding: 257px 15px 126px;
+        padding: 257px 20px 126px;
     }
 
     .banner__title {

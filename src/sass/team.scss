@@ -1,6 +1,6 @@
 .team__container {
     max-width: 1200px;
-    padding: 115px 15px 114px;
+    padding: 115px 15px 0;
     margin: 0 auto;
 }
 
@@ -67,37 +67,33 @@
     height: 39px;
     width: 39px;
     transition: all 0.3s ease 0s;
-
     & a {
         font-size: 18px;
     }
 
-    &.is-hover--facebook {
+    &.is-hover:nth-child(1) {
         border: 1px solid #4267b2;
+        & .icon-facebook::before {
+            color:#4267b2;
+        }
     }
-
-    &.is-hover--twitter {
+    &.is-hover:nth-child(2) {
         border: 1px solid #1da1f2;
+        & .icon-twitter::before {
+            color:#1da1f2;
+        }
     }
 
-    &.is-hover--linkedin {
+    &.is-hover:nth-child(3) {
         border: 1px solid #007b21;
+        & .icon-linkedin::before {
+            color: #007b21;
+        }
     }
 }
+
 .team__icon:not(:last-child) {
     margin: 0 6px 0 0;
-}
-
-.icon-facebook:hover::before {
-    color: #4267b2;
-}
-
-.icon-twitter:hover::before {
-    color: #1da1f2;
-}
-
-.icon-linkedin:hover::before {
-    color: #007b21;
 }
 
 @media (max-width: 1024px) {

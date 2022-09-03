@@ -1,21 +1,27 @@
+new Swiper('.image-slider', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 1000,
+        stopOnLastSlide:false,
+        disableOnInteraction:false,
+    },
+    speed:700,
+    effect: 'fade',
+    fadeEffect:{
+        crossFade:true
+    },
+});
 $(document).ready(function () {
     $('.header__burger').click(function (event) {
         $('.header__burger,.menu__list').toggleClass('active');
         $('body').toggleClass('lock');
     });
-    $('.icon-facebook').on('mouseover', function () {
-        $(this).parent().addClass('is-hover--facebook');
+    $('.icon').on('mouseover', function () {
+        $(this).addClass('is-hover');
     }).on('mouseout', function () {
-        $(this).parent().removeClass('is-hover--facebook');
-    })
-    $('.icon-twitter').on('mouseover', function () {
-        $(this).parent().addClass('is-hover--twitter');
-    }).on('mouseout', function () {
-        $(this).parent().removeClass('is-hover--twitter');
-    })
-    $('.icon-linkedin').on('mouseover', function () {
-        $(this).parent().addClass('is-hover--linkedin');
-    }).on('mouseout', function () {
-        $(this).parent().removeClass('is-hover--linkedin');
+        $(this).removeClass('is-hover');
     })
 });
