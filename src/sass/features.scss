@@ -1,6 +1,6 @@
 .features__container {
     max-width: 1200px;
-    padding: 116px 15px 45px;
+    padding: 116px 15px 46px;
     margin: 0 auto;
 }
 .features__content {
@@ -64,18 +64,15 @@
 }
 @media (max-width: 768px) {
     .features__container {
-        padding: 40px 20px 35px;
+        padding: 40px 20px 0;
     }
     .features__content {
-        margin: 0 -20px;
+        margin: 0 -20px -7px;
     }
     .features__content-item {
         flex: 0 1 100%;
         margin: 0 auto 42px;
         padding: 0 20px;
-    }
-    .features-item:last-child {
-        margin: 0 auto;
     }
     .features-item__image {
         height: 76px;

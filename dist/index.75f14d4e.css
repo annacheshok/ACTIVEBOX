@@ -2,7 +2,7 @@
 .features__container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 116px 15px 45px;
+  padding: 116px 15px 46px;
 }
 
 .features__content {
@@ -77,21 +77,17 @@
 
 @media (max-width: 768px) {
   .features__container {
-    padding: 40px 20px 35px;
+    padding: 40px 20px 0;
   }
 
   .features__content {
-    margin: 0 -20px;
+    margin: 0 -20px -7px;
   }
 
   .features__content-item {
     flex: 0 100%;
     margin: 0 auto 42px;
     padding: 0 20px;
-  }
-
-  .features-item:last-child {
-    margin: 0 auto;
   }
 
   .features-item__image {
@@ -357,12 +353,12 @@
     padding: 39px 0 55px;
   }
 
-  .icon {
+  .team-item__icons .icon {
     height: 40px;
     width: 40px;
   }
 
-  .icon a {
+  .team-item__icons .icon a {
     font-size: 18px;
   }
 
@@ -422,7 +418,7 @@
 
 @media (max-width: 1024px) {
   .download__container {
-    padding: 94px 15px 78px;
+    padding: 94px 20px 78px;
   }
 
   .download__title {
@@ -437,7 +433,7 @@
   }
 
   .button {
-    width: 314px;
+    width: 313px;
     padding: 28px 0 29px;
     font-size: 18px;
     line-height: 21px;
@@ -468,7 +464,6 @@
   .button {
     max-width: 280px;
     width: 100%;
-    padding: 18px 0 19px;
   }
 
   .download__button {
@@ -547,8 +542,7 @@
 
 @media (max-width: 1024px) {
   .footer__container {
-    max-width: 1004px;
-    padding: 47px 10px 41px;
+    padding: 47px 20px 41px;
   }
 
   .footer__columns {
@@ -650,8 +644,7 @@
 }
 
 .image-slider {
-  padding: 114px 0 0;
-  position: relative;
+  margin: 114px 0 0;
 }
 
 .image-slider__slide {
@@ -678,17 +671,13 @@
   margin: 0 25px 0 0 !important;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 0 !important;
-}
-
 .image-slider .swiper-pagination-bullet-active {
   background-color: #7e5d6f;
 }
 
 .swiper-slide__image {
   max-height: 490px;
-  flex: 0 0 50%;
+  flex: 0 0 49.0066%;
 }
 
 .swiper-slide__image img {
@@ -701,8 +690,7 @@
 
 .swiper-slide__content {
   background-color: #5c3249;
-  flex-direction: column;
-  flex: 0 0 50%;
+  flex: 0 0 50.9934%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -710,6 +698,8 @@
 
 .swiper-slide__content-body {
   max-width: 471px;
+  flex-direction: column;
+  padding: 0 41px 10px 0;
 }
 
 .swiper-slide__content-comment {
@@ -733,12 +723,6 @@
 @media (max-width: 1024px) {
   .image-slider {
     padding: 78px 0 0;
-    position: relative;
-  }
-
-  .image-slider__slide {
-    width: 100%;
-    display: flex;
   }
 
   .image-slider .swiper-pagination-horizontal {
@@ -760,6 +744,7 @@
 
   .swiper-slide__content-body {
     max-width: 330px;
+    padding: 0 16px 61px 0;
   }
 
   .swiper-slide__content-comment {
@@ -778,8 +763,8 @@
   .image-slider {
     text-align: center;
     width: 100%;
+    margin: 0;
     padding: 0;
-    position: relative;
   }
 
   .image-slider__slide .swiper-slide {
@@ -789,6 +774,7 @@
 
   .swiper-slide__content-body {
     max-width: 100%;
+    padding: 0;
   }
 
   .image-slider .swiper-pagination-horizontal {
@@ -875,7 +861,7 @@
 .header__logo {
   z-index: 60;
   width: 184px;
-  height: 26px;
+  height: 27px;
   position: relative;
 }
 
@@ -1030,7 +1016,7 @@
 
   .header__logo {
     width: 103px;
-    height: 14px;
+    height: 15px;
   }
 
   .menu__link {
@@ -1130,9 +1116,13 @@
   }
 
   .banner__subtitle {
-    padding: 0 6px;
+    padding: 0 10px;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .banner .button {
+    padding: 18px 0 19px;
   }
 
   .banner__button {
