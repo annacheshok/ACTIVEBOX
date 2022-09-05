@@ -671,12 +671,13 @@
 }
 
 .image-slider__slide {
+  max-height: 490px;
   width: 100%;
   display: flex;
 }
 
 .swiper-slide__image {
-  max-height: 490px;
+  height: auto;
   flex: 0 0 49.0066%;
 }
 
@@ -693,10 +694,12 @@
   flex: 0 0 50.9934%;
   justify-content: center;
   align-items: center;
+  padding: 0 41px 10px 0;
   display: flex;
 }
 
 .swiper-slide__content-body {
+  max-height: 238px;
   max-width: 471px;
   flex-direction: column;
   padding: 0 41px 10px 0;
