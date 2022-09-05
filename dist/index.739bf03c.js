@@ -545,7 +545,7 @@ new Swiper(".image-slider", {
         stopOnLastSlide: false,
         disableOnInteraction: false
     },
-    speed: 700,
+    speed: 2000,
     effect: "fade",
     fadeEffect: {
         crossFade: true

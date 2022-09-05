@@ -58,6 +58,9 @@
     height: 39px;
     width: 39px;
     transition: all 0.3s ease 0s;
+    &:hover{
+        cursor:pointer;
+    }
     & a {
         font-size: 18px;
     }
