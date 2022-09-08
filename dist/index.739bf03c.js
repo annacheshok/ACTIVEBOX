@@ -532,9 +532,10 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"ebWYT":[function(require,module,exports) {
-var _scriptJs = require("./script.js");
+var _scriptJs = require("../js/script.js");
+var _styleScss = require("../sass/style.scss");
 
-},{"./script.js":"dV6cC"}],"dV6cC":[function(require,module,exports) {
+},{"../sass/style.scss":"fpeeO","../js/script.js":"dV6cC"}],"fpeeO":[function() {},{}],"dV6cC":[function(require,module,exports) {
 new Swiper(".image-slider", {
     pagination: {
         el: ".swiper-pagination",
