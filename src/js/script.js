@@ -19,6 +19,7 @@ $(document).ready(function () {
         $('body').toggleClass('lock');
         $('.header__burger,.menu__list').toggleClass('active');
         $('.menu-item').click(function (event){
+            $('body').removeClass('lock');
             $('.header__burger,.menu__list').removeClass('active');
         });
     });

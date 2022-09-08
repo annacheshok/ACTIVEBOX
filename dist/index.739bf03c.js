@@ -533,9 +533,9 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"ebWYT":[function(require,module,exports) {
 var _scriptJs = require("../js/script.js");
-var _styleScss = require("../sass/style.scss");
+var _styleCss = require("../sass/style.css");
 
-},{"../sass/style.scss":"fpeeO","../js/script.js":"dV6cC"}],"fpeeO":[function() {},{}],"dV6cC":[function(require,module,exports) {
+},{"../js/script.js":"dV6cC","../sass/style.css":"gpVQ1"}],"dV6cC":[function(require,module,exports) {
 new Swiper(".image-slider", {
     pagination: {
         el: ".swiper-pagination",
@@ -557,6 +557,7 @@ $(document).ready(function() {
         $("body").toggleClass("lock");
         $(".header__burger,.menu__list").toggleClass("active");
         $(".menu-item").click(function(event) {
+            $("body").removeClass("lock");
             $(".header__burger,.menu__list").removeClass("active");
         });
     });
@@ -567,6 +568,6 @@ $(document).ready(function() {
     });
 });
 
-},{}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequire2c60")
+},{}],"gpVQ1":[function() {},{}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequire2c60")
 
 //# sourceMappingURL=index.739bf03c.js.map
