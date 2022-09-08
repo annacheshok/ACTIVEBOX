@@ -533,9 +533,8 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"ebWYT":[function(require,module,exports) {
 var _scriptJs = require("../js/script.js");
-var _styleCss = require("../sass/style.css");
 
-},{"../js/script.js":"dV6cC","../sass/style.css":"gpVQ1"}],"dV6cC":[function(require,module,exports) {
+},{"../js/script.js":"dV6cC"}],"dV6cC":[function(require,module,exports) {
 new Swiper(".image-slider", {
     pagination: {
         el: ".swiper-pagination",
@@ -568,6 +567,6 @@ $(document).ready(function() {
     });
 });
 
-},{}],"gpVQ1":[function() {},{}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequire2c60")
+},{}]},["cVgJb","ebWYT"], "ebWYT", "parcelRequire2c60")
 
 //# sourceMappingURL=index.739bf03c.js.map
