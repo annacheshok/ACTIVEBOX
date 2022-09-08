@@ -4,7 +4,7 @@
   "description": "text description",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html --open -p 4000"
+    "start": "parcel index.html --open -p 4000"
   },
   "repository": {
     "type": "git",
