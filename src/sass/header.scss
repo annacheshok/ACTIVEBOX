@@ -30,6 +30,9 @@
 }
 .header__burger {
     display: none;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .header__burger.active::before {
     transform: rotate(45deg);

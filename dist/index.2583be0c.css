@@ -36,6 +36,10 @@
   display: none;
 }
 
+.header__burger:hover {
+  cursor: pointer;
+}
+
 .header__burger.active:before {
   top: 8px;
   transform: rotate(45deg);
