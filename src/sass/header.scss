@@ -31,7 +31,7 @@
 .header__burger {
     display: none;
     &:hover{
-        cursor: pointer;
+        cursor:pointer;
     }
 }
 .header__burger.active::before {
